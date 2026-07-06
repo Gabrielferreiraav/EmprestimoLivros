@@ -1,0 +1,30 @@
+﻿@model IEnumerable<EmprestimoModel> 
+
+<table class="table table-dark table-hover">
+    <thead>
+        <tr>
+            <th scope="col">Recebedor</th>
+            <th scope="col">Fornecedor</th>
+            <th scope="col">Livro</th>
+            <th scope="col">Ultima Atualizacao</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model == null || !Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.Recebedor</th>
+                    <td>@item.Fornecedor</td>
+                    <td>@item.LivroEmprestado</td>
+                    <td>@item.UltimaAlteracao</td>
+                </tr>
+            }
+        }
+        else
+		{
+            <samp>This text is meant to be treated as sample output from a computer program.</samp>
+        }
+    </tbody>
+</table>
