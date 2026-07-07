@@ -3,7 +3,11 @@
 <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-5"> 
         <h1>Lista de Empréstimos</h1>
-		<a class="btn btn-success mx-2" asp-controller="Emprestimo" asp-action="Cadastrar">Novo Empréstimo</a>
+		
+        <div>
+            <a class="btn btn-success mx-2" asp-controller="Emprestimo" asp-action="Cadastrar">Novo Empréstimo</a>
+            <a class="btn btn-success mx-2" asp-controller="Emprestimo" asp-action="Exportar">Exportar Empréstimos</a>
+        </div>
 
 <table class="table table-dark table-hover">
     <thead>
@@ -11,7 +15,7 @@
             <th scope="col">Recebedor</th>
             <th scope="col">Fornecedor</th>
             <th scope="col">Livro</th>
-            <th scope="col">Ultima Atualizacao</th>
+            <th scope="col">Data Emprestimo</th>
             <th></th>
         </tr>
     </thead>
